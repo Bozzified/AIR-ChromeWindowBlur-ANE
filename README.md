@@ -37,7 +37,7 @@ Adobe recommends Link Type for the attached ANEs to be of external type not Merg
 
 **IMPORTANT: **
 Due to limitations of System Chrome and Chromeless Opaque, you need to use Custom Chrome Transparent option under AIR SDK Settings in order to take advantage of this ANE.
-The Hardware Acceleration/Render Mode *_has_* to be set to DIRECT.
+The Hardware Acceleration/Render Mode *_has_* to be set to AUTO.
 
 Example Usage:
 ===============
@@ -74,7 +74,7 @@ In Action:
 Responsible Use:
 ================
 
-It's important to note that even though Core Graphics is GPU accelerated and the blurring and effects are completely native, abusing the Transparency with a lot of heavy animations and stuff will definitely affect the performance. Due to the nature of AIR's runtime the **Render Mode** and **Hardware Acceleration** should be set to **DIRECT** as it might cause issues for you and interfere with Core Graphics API.
+It's important to note that even though Core Graphics is GPU accelerated and the blurring and effects are completely native, abusing the Transparency with a lot of heavy animations and stuff will definitely affect the performance. Due to the nature of AIR's runtime the **Render Mode** and **Hardware Acceleration** should be set to **AUTO** as it might cause issues for you and interfere with Core Graphics API.
 
 
 Planned Additions:
