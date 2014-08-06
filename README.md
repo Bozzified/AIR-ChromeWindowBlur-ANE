@@ -4,7 +4,7 @@ AIR-ChromeWindowBlur-ANE
 A native extension for Adobe AIR for Mac/OSX development that uses Core Graphics to enhance window SystemChrome option with blur/alpha effects
 Extension is compiled with XCode 5.1.1 and deployment target is set at 10.8+
 
-What this ANE (Native Extension) Does?
+What does it do?
 ======================================
 
 Since a lot of folks love to build mobile and desktop applications with Adobe AIR, I found that System Chrome option lacks transparency and if you want transparance you have to invest quite a bit of time to write Native Window controls in AS3 and you end up with an app that doesn't look as native without the System Chrome (traditional system caption bar). 
@@ -37,6 +37,7 @@ Adobe recommends Link Type for the attached ANEs to be of external type not Merg
 
 **IMPORTANT: **
 Due to limitations of System Chrome and Chromeless Opaque, you need to use Custom Chrome Transparent option under AIR SDK Settings in order to take advantage of this ANE.
+The Hardware Acceleration/Render Mode *_has_* to be set to DIRECT.
 
 Example Usage:
 ===============
@@ -45,28 +46,41 @@ Since we are extending Custom Chrome functionality from AIR framework that doesn
 
 ```
 import com.bozzified.extensions.NativeWinBlur;
-*
-// create instance for AIR window Core Graphics awesomeness *
+
+_ // create instance for AIR window Core Graphics awesomeness _
 var win:NativeWinBlur = new NativeWinBlur();
 
-*
+_
 // set window attributes - always goes before enableWindowBlur()
 // ARGUMENTS TO PASS
 // hasWindowTitle:Boolean=true, windowTitle:String="", maximizable:Boolean=true, minimizable:Boolean=true, closable:Boolean=true, resizable:Boolean=true
-*
+_
 win.setWindowAttributes(true, "Core Graphics AIR Chrome Window Blurred", false, true, true, false);
 
-* // set effect properties 
+_ // set effect properties 
 // ARGUMENTS TO PASS
-// alpha:Number=0.5, blurAmount:uint=50, red:uint=0, green:uint=0, blue:uint=0  *
+// alpha:Number=0.5, blurAmount:uint=50, red:uint=0, green:uint=0, blue:uint=0  _
 win.enableWindowBlur(0.4, 30, 255, 255, 255);
 
 ```
 
-Results:
+In Action:
 =========
 
 ![Image of Example Window]
 (https://raw.githubusercontent.com/Bozzified/AIR-ChromeWindowBlur-ANE/master/MacOS-x86/actionPreview.png)
 
+
+Responsible Use:
+================
+
+It's important to note that even though Core Graphics is GPU accelerated and the blurring and effects are completely native, abusing the Transparency with a lot of heavy animations and stuff will definitely affect the performance. Due to the nature of AIR's runtime the **Render Mode** and **Hardware Acceleration** should be set to **DIRECT** as it might cause issues for you and interfere with Core Graphics API.
+
+
+Bug Reports/Suggestions:
+=========================
+
+If you find bugs, have issues, or suggestions feel free to reach out to me on Twitter or Google Plus.
+Twitter: [@Bozzified](www.twitter.com/Bozzified)
+Google Plus: [+Boz Bundalo](https://plus.google.com/+BozBundalo)
 
