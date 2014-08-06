@@ -32,8 +32,11 @@ FLASH BUILDER:
 4. Change the file type to .ANE in the dialog box
 5. Locate the ANE and add it.
 
-NOTE: Adobe recommends Link Type for the attached ANEs to be of external type not Merged Into Code.
+NOTE:
+Adobe recommends Link Type for the attached ANEs to be of external type not Merged Into Code.
 
+IMPORTANT: 
+Due to limitations of System Chrome and Chromeless Opaque, you need to use Custom Chrome Transparent option under AIR SDK Settings in order to take advantage of this ANE.
 
 Example Usage:
 ===============
