@@ -18,13 +18,13 @@ I tried to allow developers as much freedom as possible and included options for
 
 You just need to get the ANE from this repo, link it with your project and off you go. 
 
-FLASH CC/2014 LINKING:
+**FLASH CC/2014 LINKING:**
 
 1. Go to Actionscript 3 setting where you would normally include the SWC files.
 2. Hit + and point to the location where you placed the ANE to link it.
 
 
-FLASH BUILDER:
+**FLASH BUILDER:**
 
 1. Open Project Properties
 2. Go to Actionscript Build Path
@@ -32,10 +32,10 @@ FLASH BUILDER:
 4. Change the file type to .ANE in the dialog box
 5. Locate the ANE and add it.
 
-NOTE:
+**NOTE:**
 Adobe recommends Link Type for the attached ANEs to be of external type not Merged Into Code.
 
-IMPORTANT: 
+**IMPORTANT: **
 Due to limitations of System Chrome and Chromeless Opaque, you need to use Custom Chrome Transparent option under AIR SDK Settings in order to take advantage of this ANE.
 
 Example Usage:
@@ -45,21 +45,28 @@ Since we are extending Custom Chrome functionality from AIR framework that doesn
 
 ```
 import com.bozzified.extensions.NativeWinBlur;
-
-// create instance for AIR window Core Graphics awesomeness
+*
+// create instance for AIR window Core Graphics awesomeness *
 var win:NativeWinBlur = new NativeWinBlur();
 
+*
 // set window attributes - always goes before enableWindowBlur()
 // ARGUMENTS TO PASS
 // hasWindowTitle:Boolean=true, windowTitle:String="", maximizable:Boolean=true, minimizable:Boolean=true, closable:Boolean=true, resizable:Boolean=true
+*
 win.setWindowAttributes(true, "Core Graphics AIR Chrome Window Blurred", false, true, true, false);
 
-// set effect properties 
+* // set effect properties 
 // ARGUMENTS TO PASS
-// alpha:Number=0.5, blurAmount:uint=50, red:uint=0, green:uint=0, blue:uint=0 
+// alpha:Number=0.5, blurAmount:uint=50, red:uint=0, green:uint=0, blue:uint=0  *
 win.enableWindowBlur(0.4, 30, 255, 255, 255);
 
 ```
 
+Results:
+=========
+
+![Image of Example Window]
+(https://raw.githubusercontent.com/Bozzified/AIR-ChromeWindowBlur-ANE/master/MacOS-x86/actionPreview.png)
 
 
