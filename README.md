@@ -42,7 +42,7 @@ The Hardware Acceleration/Render Mode *_has_* to be set to DIRECT.
 Example Usage:
 ===============
 
-Since we are extending Custom Chrome functionality from AIR framework that doesn't have title bar, I've given you the ability to specify custom title.
+Since we are extending Custom Chrome functionality from AIR framework that doesn't have title bar, I've given you the ability to specify custom title alongside other properties like whether or not you want the window to be closable, resizable, maximizable, minimizable in addition to the actual transcluency adjustment properties.
 
 ```
 import com.bozzified.extensions.NativeWinBlur;
