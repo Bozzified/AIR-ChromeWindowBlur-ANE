@@ -77,6 +77,11 @@ Responsible Use:
 It's important to note that even though Core Graphics is GPU accelerated and the blurring and effects are completely native, abusing the Transparency with a lot of heavy animations and stuff will definitely affect the performance. Due to the nature of AIR's runtime the **Render Mode** and **Hardware Acceleration** should be set to **DIRECT** as it might cause issues for you and interfere with Core Graphics API.
 
 
+Planned Additions:
+====================
+In this release I really didn't have time to enable full screen mode support even though there are native extensions out there that might do it. If people want it, I can definitely include that in and probably expand a bit more on some additions like (native alert dialogs maybe inside your AIR app? :) ). I'm waiting for Yosemite to see what type of integration I can expand but for now, your app will hopefully now look cooler than it ever did before with AIR :)
+
+
 Bug Reports/Suggestions:
 =========================
 
