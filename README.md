@@ -7,7 +7,7 @@ Extension is compiled with XCode 5.1.1 and deployment target is set at 10.8+
 What does it do?
 ======================================
 
-Since a lot of folks love to build mobile and desktop applications with Adobe AIR, I found that System Chrome option lacks transparency and if you want transparance you have to invest quite a bit of time to write Native Window controls in AS3 and you end up with an app that doesn't look as native without the System Chrome (traditional system caption bar). 
+Since a lot of folks love to build mobile and desktop applications with Adobe AIR, I found that System Chrome option lacks transparency and if you want transparent window background you have to invest quite a bit of time to write Native Window controls to move/control the window in AS3 due to Chromeless Window approach in AIR where it removes native OS's title bar and you end up with an app that doesn't look as native without it. 
 
 With the upcoming arrival of OSX Yosemite, I'm sure a lot of AS3 developers will want their Mac apps to look similar to the native look of the OS, so I created a native extension that overrides some of the properties of AIR Framework and allows Custom Chrome to act as standard System Chrome but with cool visual blurring and transparency effect using Core Graphics API.
 
