@@ -47,19 +47,19 @@ Since we are extending Custom Chrome functionality from AIR framework that doesn
 ```
 import com.bozzified.extensions.NativeWinBlur;
 
-_ // create instance for AIR window Core Graphics awesomeness _
+// create instance for AIR window Core Graphics awesomeness
 var win:NativeWinBlur = new NativeWinBlur();
 
-_
+
 // set window attributes - always goes before enableWindowBlur()
 // ARGUMENTS TO PASS
 // hasWindowTitle:Boolean=true, windowTitle:String="", maximizable:Boolean=true, minimizable:Boolean=true, closable:Boolean=true, resizable:Boolean=true
-_
+
 win.setWindowAttributes(true, "Core Graphics AIR Chrome Window Blurred", false, true, true, false);
 
-_ // set effect properties 
+// set effect properties 
 // ARGUMENTS TO PASS
-// alpha:Number=0.5, blurAmount:uint=50, red:uint=0, green:uint=0, blue:uint=0  _
+// alpha:Number=0.5, blurAmount:uint=50, red:uint=0, green:uint=0, blue:uint=0
 win.enableWindowBlur(0.4, 30, 255, 255, 255);
 
 ```
@@ -81,6 +81,6 @@ Bug Reports/Suggestions:
 =========================
 
 If you find bugs, have issues, or suggestions feel free to reach out to me on Twitter or Google Plus.
-Twitter: [@Bozzified](www.twitter.com/Bozzified)
+Twitter: [@Bozzified](http://www.twitter.com/Bozzified)
 Google Plus: [+Boz Bundalo](https://plus.google.com/+BozBundalo)
 
